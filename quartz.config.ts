@@ -10,8 +10,8 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "archit-spec.github.io/archit-spec.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "archit-spec.github.io",
+    ignorePatterns: [".obsidian"],
     defaultDateType: "created",
     theme: {
       cdnCaching: true,
