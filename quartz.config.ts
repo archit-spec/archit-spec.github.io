@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "blog.dumball.in",
+    baseUrl: "archit-spec.github.io",
     ignorePatterns: [".obsidian"],
     defaultDateType: "created",
     theme: {
