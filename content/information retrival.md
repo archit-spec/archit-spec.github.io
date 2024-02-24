@@ -6,7 +6,7 @@ tags:
   - ml
 ---
 
-==Desclaimer: this is for my personal use so i have left out the basics and the information i dont feel is necessacry==
+# Random testing
 
 # Intro
 

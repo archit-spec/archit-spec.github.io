@@ -1,7 +1,7 @@
 ---
-title: Welcome to my blog
+title: Welcome to my diary
 ---
 
 ![[for_distinguished_broski 2.png]]
-Dumball's diary , everything ranging from machine learning, cooking, trees!, insects,
-to weird animals and history maybe...idk😛
+Dumball's diary , everything ranging from machine learning, trees!, insects,
+and history maybe...idk
