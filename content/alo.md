@@ -1,8 +1,10 @@
 ---
-title: Example Title
+title: alo
 draft: false
 tags:
-  - example-tag
+  - alo
+  - alo2
+  - alo3
 ---
  
 The rest of your content lives here. You can use **Markdown** here :)
