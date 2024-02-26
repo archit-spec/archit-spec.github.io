@@ -257,7 +257,7 @@ The following hyperparameters were used during training:
 | 0.3632        | 3.24  | 252  | 0.7408           | 0.6716   |
 
 
-<iframe src="https://wandb.ai/dumbal/huggingface/reports/Vandalism-Detection-with-VideoMae-Finetuning--Vmlldzo2OTQ0Mjc0" width="800" height="600"></iframe>
+<iframe src="https://wandb.ai/dumbal/huggingface/reports/Vandalism-Detection-with-VideoMae-Finetuning--Vmlldzo2OTQ0Mjc0" width="600" height="1500"></iframe>
 
 
 
