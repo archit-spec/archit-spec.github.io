@@ -1,8 +1,3 @@
----
-title: vandalism detection using VideoMae model
-tags:
-  - deeplearning
----
 # Abstract
 
 ##### Transformer-Based Deep Learning for Vandalism Detection: An Overview
@@ -24,12 +19,11 @@ Traditional approaches to video analysis have often relied on frame-by-frame pro
 To address these shortcomings and advance the frontier of video analysis, researchers have increasingly turned to models specifically designed for video understanding. One such paradigm-shifting architecture is the Video Transformer, an adaptation of the transformer model originally proposed for natural language processing tasks. The transformer architecture, characterized by its self-attention mechanism and parallel processing capabilities, has shown remarkable prowess in capturing both spatial and temporal relationships in videos, leading to state-of-the-art performance in various video-related tasks.
 
 
-![[Pasted image 20240227003547.png]]
-
-
 In this project, we propose the utilization of a Video Transformer model for comprehensive video understanding and analysis. By leveraging the inherent strengths of transformers in modeling long-range dependencies and contextual information, we aim to surpass the limitations of traditional approaches and existing deep learning architectures in video analysis tasks. Through a combination of self-attention mechanisms and parallel processing, the proposed Video Transformer model promises to offer superior performance in tasks such as action recognition, video summarization, anomaly detection, and more.
 
 Furthermore, we envision the potential applications of the Video Transformer model across diverse domains, including surveillance and security, multimedia content creation, human-computer interaction, and autonomous systems. By elucidating the principles underlying the Video Transformer architecture and demonstrating its efficacy through empirical evaluation, this paper seeks to catalyze further research and innovation in the field of video analysis, paving the way for enhanced understanding and utilization of this rich source of visual information.
+ 
+                     $$L = \frac{1}{\Omega} \sum_{p \in \Omega} |I(p) - \hat{I}(p)|^2$$
 
 
 
@@ -55,14 +49,12 @@ Inspired by the successes and innovations in masked visual modeling, VideoMAE in
 # System Methodology
 
 
-ImageMAE (Masked Autoencoder for Images) [30] employs an asymmetric encoder-decoder architecture to perform the masking and reconstruction task. Initially, the input image  $I \in \mathbb{R}^{3 \times H \times W}$ undergoes division into regular non-overlapping patches of size $16 \times 16$, with each patch represented by token embeddings. Subsequently, a subset of tokens undergoes random masking with a high masking ratio (75%), and only the remaining tokens are passed through the transformer encoder $\Phi_{\text{enc}}$. Finally, a shallow decoder $\Phi_{\text{dec}}$ is placed atop the visible tokens from the encoder along with learnable mask tokens to reconstruct the image. The loss function utilized is the mean squared error (MSE) loss between the normalized masked tokens and the reconstructed ones in the pixel space
-
-$L = \frac{1}{\Omega} \sum_{p \in \Omega} |I(p) - \hat{I}(p)|^2$
+ImageMAE (Masked Autoencoder for Images) [30] employs an asymmetric encoder-decoder architecture to perform the masking and reconstruction task. Initially, the input image  $I \in \mathbb{R}^{3 \times H \times W}$ undergoes division into regular non-overlapping patches of size $16 \times 16$, with each patch represented by token embeddings. Subsequently, a subset of tokens undergoes random masking with a high masking ratio (75%), and only the remaining tokens are passed through the transformer encoder $\Phi_{\text{enc}}$. Finally, a shallow decoder $\Phi_{\text{dec}}$ is placed atop the visible tokens from the encoder along with learnable mask tokens to reconstruct the image. The loss function utilized is the mean squared error (MSE) loss between the normalized masked tokens and the reconstructed ones in the pixel space.
 
 
-        
-        
- Figure: Slowness is a general prior in (a) video data [87]. This leads to two important  characteristics in time: temporal redundancy and temporal correlation. Temporal redundancy makes it possible to recover pixels under an extremely high masking ratio. Temporal correlation leads to easily reconstruct the missing pixels by finding those corresponding patches in adjacent frames under plain (b) frame masking or (c) random masking. To avoid this simple task and encourage learning representative representation, we propose a (d) tube masking, where the masking map is the same for all frames.
+
+
+Figure: Slowness is a general prior in (a) video data [87]. This leads to two important  characteristics in time: temporal redundancy and temporal correlation. Temporal redundancy makes it possible to recover pixels under an extremely high masking ratio. Temporal correlation leads to easily reconstruct the missing pixels by finding those corresponding patches in adjacent frames under plain (b) frame masking or (c) random masking. To avoid this simple task and encourage learning representative representation, we propose a (d) tube masking, where the masking map is the same for all frames.
 
 ![[Pasted image 20240227003729.png]]
 
