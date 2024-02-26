@@ -2,23 +2,7 @@
 title: vandalism detection using VideoMae model
 tags:
   - deeplearning
-  - transformers
-  - huggingface
 ---
-
-
-**
-Contents: 
-1. Abstract
-2. Introduction
-3. Literature Review
-4. Problem Identification & Objectives
-5. System Methodology
-6. Overview of Technologies
-7. Implementation
-8. Results & Discussions
-9. Conclusion & Future Scope
-**
 # Abstract
 Title: Transformer-Based Deep Learning for Vandalism Detection: An Overview
 
